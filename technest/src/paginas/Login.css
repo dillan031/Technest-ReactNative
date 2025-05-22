@@ -1,0 +1,121 @@
+/* Contenedor principal */
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    padding: 60px 40px;
+    max-width: 900px; /* Aumentado desde 380px */
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Título */
+.login-container h2 {
+    color: cyan;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.login-container input::placeholder {
+    color: #ddd;
+}
+
+/* Botón principal */
+.btn-login {
+    width: 100%;
+    background: linear-gradient(90deg, cyan, blue);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Botones de redes sociales */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-social {
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    width: 48%;
+    transition: transform 0.2s;
+}
+
+.btn-social:hover {
+    transform: scale(1.05);
+}
+
+.google-login {
+    background: #db4437;
+    color: white;
+}
+
+/* Enlaces */
+.login-container a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer-ml {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-ml a {
+    color: cyan;
+    text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+    }
+    .login-container h2 {
+        font-size: 20px;
+    }
+    .btn-social {
+        width: 100%;
+    }
+}
